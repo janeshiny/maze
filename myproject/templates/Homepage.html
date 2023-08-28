@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tea Leaf Disease Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tealeaves1.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Tea Leaf Disease Detection</h1>
+    </header>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="{{ url_for('about') }}">About us</a>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to our Tea Leaf Disease Detection Project!</h2>
+            <p>We have trained a machine learning model based on the VGG16 architecture to recognize and classify diseases in tea leaves. With the help of this model, we aim to assist tea farmers in early detection and prevention of diseases, thus improving crop yield and quality.</p>
+            <p>Explore our website to learn more about our project and how it can benefit tea farmers.</p>
+
+            <div class="button-container">
+                <a href="{{ url_for('predict') }}" class="button">Predict</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Tea Leaf Disease Detection. All rights reserved.
+    </footer>
+</body>
+</html>

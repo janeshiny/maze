@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tealeaves1.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .result {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tea Leaf Disease Detection</h1>
+    </header>
+    <div class="topnav">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('about') }}">About us</a>
+      <a class="active" href="#home">Predict</a>
+    </div>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            <p>{{ result }}</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Tea Leaves Detection. All rights reserved.
+    </footer>
+</body>
+</html>
